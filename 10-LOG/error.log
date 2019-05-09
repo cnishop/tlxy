@@ -1,2 +1,6 @@
 2018-04-20 21:55:26,811 - ERROR - 02.py[:48] - error message
 2018-04-20 21:55:26,811 - CRITICAL - 02.py[:49] - critical message
+2019-05-09 15:56:41,854 - ERROR - 02.py[:48] - error message
+2019-05-09 15:56:41,869 - CRITICAL - 02.py[:49] - critical message
+2019-05-09 15:57:38,483 - ERROR - 02.py[:48] - error message
+2019-05-09 15:57:38,483 - CRITICAL - 02.py[:49] - critical message
