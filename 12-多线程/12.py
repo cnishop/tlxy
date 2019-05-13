@@ -1,7 +1,7 @@
 import threading
 
 sum = 0
-loopSum = 1000000
+loopSum = 10
 
 
 lock = threading.Lock()
@@ -14,6 +14,7 @@ def myAdd():
         # 上锁，申请锁
         lock.acquire()
         sum += 1
+        print("add..{0}".format(sum) )
         # 释放锁
         lock.release()
 
@@ -23,6 +24,7 @@ def myMinu():
     for i in range(1, loopSum):
         lock.acquire()
         sum -= 1
+        print("Minus..{0}".format(sum) )
         lock.release()
 
 if __name__ == '__main__':
