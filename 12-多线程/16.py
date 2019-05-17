@@ -8,7 +8,8 @@ def func():
     if semaphore.acquire():
         for i in range(5):
             print(threading.currentThread().getName() + ' get semaphore')
-        time.sleep(15)
+        time.sleep(5)
+        print("5 minutes later..")
         semaphore.release()
         print(threading.currentThread().getName() + ' release semaphore')
 

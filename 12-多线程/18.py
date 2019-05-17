@@ -13,7 +13,6 @@ class MyThread(threading.Thread):
             mutex.acquire()
             mutex.release()
             mutex.release()
-
 num = 0
 
 mutex = threading.RLock()
