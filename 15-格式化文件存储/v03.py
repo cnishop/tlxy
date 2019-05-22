@@ -15,7 +15,7 @@ for stu in root.iter('Student'):
     if name != None:
         name.set( 'test', name.text * 2)
 
-stu = root.find('Student')
+#stu = root.find('Student')
 
 #生成一个新的 元素
 e = et.Element('ADDer')
