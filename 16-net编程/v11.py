@@ -14,7 +14,7 @@ html_content = """
             </head>
             <body>
 
-            <h1> 这是一封HTML格式邮件</h1>
+            <h1> 这是一封HTML格式邮件V11</h1>
 
             </body>
             </html>
@@ -29,14 +29,15 @@ msg.attach(msg_text)
 
 
 
-# 发送email地址，此处地址直接使用我的qq邮箱，密码临时输入
-from_addr = "1366798119@qq.com"
-#from_pwd = input('163邮箱密码: ')
-from_pwd = "hjpovygcxmrshhcj"
+# 发送email地址，此处地址直接使用我的qq有偶像，密码一般需要临时输入，此处偷懒
+from_addr = "290241262@qq.com"
 
-# 收件人信息:
-# 此处使用我注册的163邮箱
-to_addr = "1366798119@qq.com"
+# 此处密码是经过申请设置后的授权码，不是不是不是你的qq邮箱密码
+from_pwd = "nkxkncllwbntbgeh"
+# 收件人信息
+# 此处使用qq邮箱，我给自己发送
+to_addr = "cnishop@126.com"
+
 
 # 输入SMTP服务器地址:
 # 此地址根据每隔邮件服务商有不同的值,这个是发信邮件服务商的smtp地址

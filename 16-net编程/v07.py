@@ -11,11 +11,11 @@ msg = MIMEText("Hello, i am beijing tulingxueyuan ", "plain", "utf-8")
 # 发送email地址，此处地址直接使用我的qq有偶像，密码一般需要临时输入，此处偷懒
 from_addr = "290241262@qq.com"
 # 此处密码是经过申请设置后的授权码，不是不是不是你的qq邮箱密码
-from_pwd = "hjpovygcxmrshhcj"
+from_pwd = "nkxkncllwbntbgeh"
 
 # 收件人信息
 # 此处使用qq邮箱，我给自己发送
-to_addr = "290241262@qq.com"
+to_addr = "guo_zhang@lamsoon.com"
 
 
 # 输入SMTP服务器地址
@@ -27,6 +27,7 @@ smtp_srv = "smtp.qq.com"
 #smtp_srv = "10.10.0.71"
 
 try:
+
     # 两个参数
     # 第一个是服务器地址，但一定是bytes格式，所以需要编码
     # 第二个参数是服务器的接受访问端口

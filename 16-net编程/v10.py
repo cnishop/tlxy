@@ -16,13 +16,16 @@ msg['Subject'] = header_sub
 
 
 
-# 构建发送者地址和登录信息
-from_addr = "1366798119@qq.com"
-from_pwd = "hjpovygcxmrshhcj"
+# 发送email地址，此处地址直接使用我的qq有偶像，密码一般需要临时输入，此处偷懒
+from_addr = "290241262@qq.com"
+
+# 此处密码是经过申请设置后的授权码，不是不是不是你的qq邮箱密码
+from_pwd = "nkxkncllwbntbgeh"
+# 收件人信息
+# 此处使用qq邮箱，我给自己发送
+to_addr = "cnishop@126.com"
 
 
-# 构建邮件接受者信息
-to_addr = "1366798119@qq.com"
 
 smtp_srv = "smtp.qq.com"
 
