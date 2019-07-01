@@ -39,6 +39,7 @@ def main():
     t3.setName("THR_3")
     t3.start()
 
+
     # 预期3秒后，thread2已经自动结束，
     time.sleep(3)
     # enumerate 得到正在运行子线程，即子线程1和子线程3

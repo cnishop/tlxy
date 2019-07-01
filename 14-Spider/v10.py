@@ -14,7 +14,7 @@ if __name__ == '__main__':
 
     # 使用代理步骤
     # 1. 设置代理地址
-    proxy = {'http': '120.194.18.90:81' }
+    proxy = {'http': '112.85.129.143:9999' }
     # 2. 创建ProxyHandler
     proxy_handler = request.ProxyHandler(proxy)
     # 3. 创建Opener

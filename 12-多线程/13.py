@@ -15,8 +15,8 @@ class Producer(threading.Thread):
         count = 0
         while True:
             # qsize返回queue内容长度
-            if queue.qsize() < 1000:
-                for i in range(100):
+            if queue.qsize() < 100:
+                for i in range(10):
                     count = count +1
                     msg = '生成产品'+str(count)
                     # put是网queue中放入一个值
@@ -29,7 +29,7 @@ class Consumer(threading.Thread):
     def run(self):
         global queue
         while True:
-            if queue.qsize() > 100:
+            if queue.qsize() > 10:
                 for i in range(3):
                     # get是从queue中取出一个值
                     msg = self.name + '消费了 '+queue.get()
@@ -40,7 +40,7 @@ class Consumer(threading.Thread):
 if __name__ == '__main__':
     queue = queue.Queue()
 
-    for i in range(500):
+    for i in range(50):
         queue.put('初始产品'+str(i))
     for i in range(2):
         p = Producer()
