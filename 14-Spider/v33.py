@@ -13,3 +13,15 @@ soup = BeautifulSoup(content, 'lxml')
 # bs自动转码
 content = soup.prettify()
 print(content)
+
+print("==" * 12)
+
+print(soup.meta)
+
+print("==" * 12)
+
+for node in soup.head.contents:
+    if node.name == "meta":
+        print(node)
+print("==" * 12)
+
