@@ -11,10 +11,10 @@ from django.core.urlresolvers import reverse
 '''
 def do_normalmap(request):
 
-    qs = Teacher.objects.all()
-    ss = Student.objects.all()
-    for i in ss:
-        ss.mytecher
+  #  qs = Teacher.objects.all()
+  #  ss = Student.objects.all()
+  #  for i in ss:
+  #      ss.mytecher
 
 
 
