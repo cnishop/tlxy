@@ -27,7 +27,7 @@ urlpatterns = [
 
     url(r'^book/(?:page-(?P<pn>\d+)/)$', tv.do_param2),
 
+    url(r'^name/$', tv.extremParam, {"name":"danana"}),
 
-
-    url(r'^yourname/$', tv.revParse, name="askname"),
+    url(r'^abcd/$', tv.revParse, name="askname"),  #反向解析
 ]
