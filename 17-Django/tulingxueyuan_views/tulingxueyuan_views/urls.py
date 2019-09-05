@@ -19,7 +19,7 @@ urlpatterns = [
     # 在 east/urls中添加一下内容
     url(r'^v10_1/', v.v10_1),
     url(r'^v10_2/', v.v10_2),
-    url(r'^v11/', v.v11, name="v11"),
+    url(r'^v11_hello/', v.v11, name="v11"),
 
     url(r'^v8/', v.v8_get),
 
