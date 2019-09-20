@@ -37,8 +37,8 @@ def v9_get(request):
 def v9_post(request):
     rst = ""
     for k,v in request.POST.items():
-        rst += k + "-->" + v
-        rst += ","
+        rst += k + " --> " + v
+        rst += ", "
 
     return HttpResponse("Get value of POST is {0} ".format(rst))
 
@@ -50,6 +50,7 @@ def render_test(request):
 
     rsp = render(request, "render.html")
     return rsp
+    #return render_to_response("render.html")
 
 def render2_test(request):
 
