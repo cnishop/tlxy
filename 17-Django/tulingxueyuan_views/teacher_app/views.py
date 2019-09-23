@@ -63,6 +63,7 @@ def render2_test(request):
 
 
     rsp = render(request, "render2.html", context=c )
+    print(type(rsp))
     return rsp
 
 def render3_test(request):
@@ -73,7 +74,7 @@ def render3_test(request):
     t = loader.get_template("render2.html")
     print(type(t))
 
-    r = t.render({"name": "LiuDana"})
+    r = t.render({"name": "LiuDana_3"})
     print(type(r))
 
     return HttpResponse(r)
@@ -81,7 +82,7 @@ def render3_test(request):
 def render4_test(request):
 
     # 反馈回模板render2.html
-    rsp = render_to_response("render2.html", context={"name": "liudana"})
+    rsp = render_to_response("render2.html", context={"name": "liudana4"})
 
     return rsp
 
