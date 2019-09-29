@@ -15,7 +15,7 @@ class ClassRoomAdmin(admin.ModelAdmin):
 
 @admin.register(Teacher)
 class TeacherAdmin(admin.ModelAdmin):
-    list_per_page = 2
+    list_per_page = 5
     actions_on_bottom = True
     actions_on_top = False
     list_display = ["name", "room", "curTime", "getRoomName"]
