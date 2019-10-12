@@ -8,7 +8,7 @@ class Student():
     def __init__(self, name="NoName", age=18):
         self.name = name
         self.age = age
-
+        print("init")
 
     def say(self):
         print("My name is {0}".format(self.name))

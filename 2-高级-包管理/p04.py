@@ -5,5 +5,4 @@ stu = Student()
 
 stu.say()
 
-
 sayHello()
