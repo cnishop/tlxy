@@ -4,6 +4,7 @@
 '''
 # 定义一个空的类
 class Student():
+    #print("aaa")
     # 一个空类，pass代表直接跳过
     # 此处pass必须有
     pass
