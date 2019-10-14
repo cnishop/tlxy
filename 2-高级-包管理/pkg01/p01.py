@@ -4,6 +4,7 @@
 # 一个打印语句
 
 class Student():
+    print("Student 初始化！")
     def __init__(self, name="NoName", age=18):
         self.name = name
         self.age = age

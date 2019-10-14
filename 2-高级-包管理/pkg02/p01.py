@@ -1,5 +1,6 @@
 
 class Student():
+    print("student 类首第一行")
     def __init__(self, name="NoName", age=18):
         self.name = name
         self.age = age
